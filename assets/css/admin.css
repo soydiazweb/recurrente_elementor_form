@@ -1,0 +1,49 @@
+/* Recurrente Elementor Form — admin (estilo nativo wp-admin) */
+
+/* Estados: misma convención que los estados de pedido de WooCommerce. */
+.ref-status {
+	display: inline-flex;
+	line-height: 2.5em;
+	color: #50575e;
+	background: #e5e5e5;
+	border-radius: 4px;
+	border-bottom: 1px solid rgba(0, 0, 0, .05);
+	white-space: nowrap;
+	max-width: 100%;
+}
+.ref-status span { margin: 0 1em; overflow: hidden; text-overflow: ellipsis; }
+.ref-status--completed { background: #c6e1c6; color: #2c4700; }
+.ref-status--processing,
+.ref-status--payment_in_progress { background: #c8d7e1; color: #2e4453; }
+.ref-status--pending_payment { background: #f8dda7; color: #573b00; }
+.ref-status--actions_error,
+.ref-status--needs_review,
+.ref-status--payment_failed,
+.ref-status--error { background: #eba3a3; color: #761919; }
+.ref-status--cancelled,
+.ref-status--expired { background: #e5e5e5; color: #50575e; }
+
+.wp-list-table .column-reference { width: 13%; }
+.wp-list-table .column-created_at { width: 13%; }
+.wp-list-table .column-status { width: 17%; }
+.wp-list-table .column-amount { width: 8%; }
+.wp-list-table .column-mode { width: 8%; }
+.wp-list-table .column-payment code { font-size: 11px; background: transparent; padding: 0; }
+
+.ref-kv th { width: 30%; font-weight: 600; }
+.ref-kv td { word-break: break-word; }
+.ref-meta { width: 100%; border-collapse: collapse; }
+.ref-meta th { text-align: left; vertical-align: top; padding: 4px 8px 4px 0; width: 35%; font-weight: 600; }
+.ref-meta td { padding: 4px 0; word-break: break-word; }
+.ref-col-date { width: 150px; }
+.ref-col-type { width: 150px; }
+.ref-pre { background: #f6f7f7; border: 1px solid #dcdcde; padding: 10px; overflow: auto; max-height: 320px; font-size: 12px; margin: 0 0 12px; }
+
+.ref-text-ok { color: #007017; }
+.ref-text-error { color: #b32d2e; }
+.ref-test-result { margin-left: 6px; }
+.ref-test-result.is-ok { color: #007017; }
+.ref-test-result.is-error { color: #b32d2e; }
+.ref-checklist { list-style: disc; margin: 0 0 0 18px; }
+.ref-checklist li { margin-bottom: 4px; }
+.ref-wrap .nav-tab-wrapper { margin-bottom: 8px; }
